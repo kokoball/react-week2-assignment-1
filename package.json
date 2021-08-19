@@ -6,8 +6,7 @@
   "scripts": {
     "start": "webpack serve",
     "test:e2e": "codeceptjs run --steps",
-    "test": "start-server-and-test start http://localhost:8080 test:e2e",
-    "lint": "eslint --ext js,jsx ."
+    "test": "start-server-and-test start http://localhost:8081 test:e2e"
   },
   "keywords": [],
   "author": "",
