@@ -8,23 +8,11 @@ export default function App() {
 
   const { count } = state;
 
-  function handleClick() {
+  function handleClick(increment) {
     setState({
-      count: count + 1,
+      count: count + increment,
     });
   }
 
-  function handleNumberClick(number) {
-    setState({
-      count: count + number,
-    });
-  }
-
-  return (
-    <Page
-      count={count}
-      onClick={handleClick}
-      onClickNumber={handleNumberClick}
-    />
-  );
+  return <Page count={count} onClick={handleClick} />;
 }

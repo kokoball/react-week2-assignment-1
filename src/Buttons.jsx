@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+
 import Button from './Button';
 
+// eslint-disable-next-line react/prop-types
 export default function Buttons({ onClick }) {
   return (
     <p>
